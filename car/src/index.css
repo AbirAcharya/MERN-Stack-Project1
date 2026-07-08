@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@layer utilities {
+  @keyframes typing {
+    0%, 100% { width: 0% }
+    45%, 55% { width: 100% }
+  }
+  @keyframes blink {
+    50% { border-color: transparent }
+  }
+
+  .animate-type {
+    animation: typing 6s steps(20) infinite, blink .75s step-end infinite;
+  }
+}
